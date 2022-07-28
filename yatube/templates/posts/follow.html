@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Подписки на сайте{% endblock %}
+{% block header %}Последние обновления подписок на сайте{% endblock %}
+{% block content %}
+
+  <div class="container">
+    {% include "includes/menu.html" with index=True %}
+
+    <!-- Вывод ленты записей -->
+    {% for post in page %}
+      {% include "includes/post_card.html" %}
+    {% endfor %}
+  </div>
+
+  {% include "includes/paginator.html" with items=page paginator=paginator %}
+
+{% endblock %} 

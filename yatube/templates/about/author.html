@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}Об авторе проекта{% endblock %}
+{% block content %}
+  <div class="row">
+    <!-- Левый вспомогательный блок -->
+    <div class="col-md-3 mb-3 mt-1">
+      <div class="card">
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <div class="h3">
+                Об авторе
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="h6 text-muted">
+                Разработано Бондарем В. А. в рамках обучения на Яндекс.Практикуме
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Тело страницы -->
+    <div class="col-md-9">
+      <div class="card-body">
+        <div class="card-text">
+          <p>Меня зовут Бондарь Валерий, разработал этот проект в рамках обучения в Яндекс.Практикуме. 
+             Первоначально желал работать как историк-исследователь, но меня сильно вдохновляли компьютерные технологии. 
+             К тому же, обработка данных - очень удобный инструмент, особенно с точки зрения убеждения, что "историк будущего будет программистом, или не будет вообще".
+          </p>
+          <p>
+             Поэтому решил стать программистом уже сейчас.<br>
+             Другие проекты доступны на <a href="https://github.com/bondarval">GitHub-аккаунте</a> 
+          </p>    
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %} 
